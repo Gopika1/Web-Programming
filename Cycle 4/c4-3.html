@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<title>Untitled Document</title>
+</head>
+<body>
+<script>
+var sum = 0;
+const number = prompt('Enter a three-digit positive integer: ');
+var temp = number;
+while (temp > 0) {
+    // finding the one's digit
+var remainder = temp % 10;
+
+    sum += remainder * remainder * remainder;
+
+    // removing last digit from the number
+    temp = parseInt(temp / 10); // convert float into integer
+}
+// check the condition
+if (sum == number) {
+    alert(" an Armstrong number");
+}
+else {
+    alert(" is not an Armstrong number");
+}
+</script>
+
+</body>
+</html>
